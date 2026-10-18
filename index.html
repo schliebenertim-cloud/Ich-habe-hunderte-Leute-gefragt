@@ -295,7 +295,7 @@ if(S.turn===undefined)S.turn=0;
 function esc2(s){return esc(s)}
 function renderEst(){var ctl=MODE!=="disp",a=document.getElementById("app"),e=S.est,code="";try{code=localStorage.getItem("ihlg-ctl")||""}catch(x){}
  a.className=ctl?"":"disp";
- var h='<h1>🎯 Schätzfrage</h1>'+teams(false)+'<h2 class="q">'+esc2(e.q)+'</h2>';
+ var h='<h1> Schätzfrage</h1>'+teams(false)+'<h2 class="q">'+esc2(e.q)+'</h2>';
  if(e.shown)h+='<div class="turnb" style="background:var(--ac)">Lösung: '+esc2(e.a)+'</div>';
  if(ctl){h+='<div class="bar">';
   if(ROLE==="host")h+='<button data-a="edit">✎ Fragen &amp; Teams</button><button data-a="load">📂 Fragen laden</button><button data-a="mode" data-m="disp">📺 Anzeige jetzt starten</button><button data-a="joinremote">📱 Dieses Gerät = Orga-Gerät</button>';
